@@ -1,0 +1,5 @@
+[Project]->[Backlog]
+[Backlog]->*[Story]
+[Project]->*[Sprint]
+[Sprint]->*[Story]
+[Story]->*[Log]
