@@ -1,3 +1,25 @@
+#Create a project with maven
 mvn archetype:generate
 
-pick archetype 171
+#pick archetype 171
+#pick groupID = edu.fh.ostfalia.teama
+#pick artifactID = ScrumApp
+#pick arbitrary version 
+
+#Change dir into your project
+
+#Test it.
+mvn install
+
+# That should build your application.
+
+#Generate the files for eclipse.
+mvn eclipse:eclipse
+
+#Open Eclipse and import your project as an existing project.
+
+#Take a look at my example pom.xml for referencing the required dependencies.
+
+#Congratulation your done with maven.
+
+#Follow the instructions on the start page of your project on github.
