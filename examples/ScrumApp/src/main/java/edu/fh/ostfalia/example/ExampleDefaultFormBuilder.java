@@ -1,0 +1,38 @@
+package edu.fh.ostfalia.example;
+
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.UIManager;
+
+import com.jgoodies.forms.builder.DefaultFormBuilder;
+import com.jgoodies.forms.debug.FormDebugPanel;
+import com.jgoodies.forms.layout.FormLayout;
+import com.jgoodies.looks.plastic.Plastic3DLookAndFeel;
+
+public class ExampleDefaultFormBuilder{
+	public static void main(String[] args) throws Exception {
+		UIManager.setLookAndFeel(new Plastic3DLookAndFeel());
+		
+		FormLayout layout = new FormLayout("right:p,3dlu,p:grow");
+		JPanel panel = new FormDebugPanel();
+		DefaultFormBuilder builder = new DefaultFormBuilder(layout, panel );
+		builder.setDefaultDialogBorder();
+		builder.appendSeparator("Projekt");
+		builder.append("Name:", new JTextField());
+		builder.append("Project Owner:", new JTextField());
+		builder.append("Scrum Muster:", new JTextField());
+
+		builder.appendSeparator("Details");
+		builder.append("Optionen:", new JComboBox(new Object[]{"ja", "nein"}));
+		
+		JFrame frame = new JFrame();
+		frame.setSize(500,600);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("Example View");
+		frame.setLocationRelativeTo(null);
+		frame.add(panel);
+		frame.setVisible(true);
+	}
+}

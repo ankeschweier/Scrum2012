@@ -1,0 +1,11 @@
+package edu.fh.ostfalia.example;
+
+public class Bad {
+	public static void main(String[] args) {
+		int unused;
+	}
+	
+	private void unused()
+	{
+	}
+}

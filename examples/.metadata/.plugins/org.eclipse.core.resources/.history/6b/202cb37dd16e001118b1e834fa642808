@@ -1,0 +1,17 @@
+package edu.fh.ostfalia.example;
+
+import javax.swing.JFrame;
+
+/**
+ * Hello world!
+ * 
+ */
+public class ExampleView {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		frame.setSize(200,600);
+		frame.setLocationRelativeTo(null);
+		frame.setVisible(true);
+		
+	}
+}

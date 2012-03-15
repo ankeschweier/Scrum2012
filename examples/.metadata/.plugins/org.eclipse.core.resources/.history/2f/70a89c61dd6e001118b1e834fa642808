@@ -1,0 +1,16 @@
+package edu.fh.ostfalia.example;
+
+public class Bad1 {
+	public static void main(String[] args) {
+		int unused;
+		System.out.println("A");
+		System.out.println("A");
+		System.out.println("A");
+		System.out.println("A");
+	}
+	
+	private void unused()
+	{
+		
+	}
+}
